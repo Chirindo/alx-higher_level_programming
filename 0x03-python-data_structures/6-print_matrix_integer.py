@@ -4,5 +4,5 @@ def print_matrix_integer(matrix=[[]]):
         count = 0
         for element in row:
             count =+ 1
-            print('{:d}'.format(elem) =end("" if count < len(row) else ""))
+            print('{:d}'.format(elem) end="" if elem != row[-1] else "")
             print()
