@@ -1,7 +1,7 @@
---script that creates the MySQL server
---creates user_0d_1
+-- script that creates the MySQL server
+-- creates user_0d_1
 
-CREATE USER 'user_0d_1'@'localhost' IDENTIFIED BY 'user_0d_1_pwd';
+CREATE USER IF NOT EXISTS 'user_0d_1'@'localhost' IDENTIFIED BY 'user_0d_1_pwd';
 
---grants all privileges
+-- grants all privileges
 GRANT ALL PRIVILEGES ON *.* TO 'user_0d_1'@'localhost';
